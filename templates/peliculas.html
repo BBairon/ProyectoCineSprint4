@@ -1,12 +1,9 @@
 {% extends "base.html" %} {% block title %} Administración de Peliculas {% endblock %} {% block content %}
-<div class="centrado1">Bienvenido, {{ session["usuario"] }}
-   <br> <a href="/logout">Cerrar sesión</a>
-</div>
 
 
 
 <div class="centrado1">
-    <a href='/peliculas_listar'>Listar peliculas</a>
+    
 
     <form action="/producto/save" method="post" onsubmit="return confirmarBorrado()">
         {{ frm.hidden_tag() }}
@@ -17,6 +14,8 @@
             </div>
             {% endfor %}
         </p> -->
+
+        
         <p>
             {{ frm.nombre.label }} {{ frm.nombre }} {% for error in frm.nombre.errors %}
             <div>

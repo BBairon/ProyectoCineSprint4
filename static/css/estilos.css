@@ -124,3 +124,53 @@ body{
         padding: 15px 0px;
     }
 }
+.contenedor3 {
+    height: 420px;
+    width: 900px;
+
+    border-radius: 20px;
+    margin:auto;
+    margin-top: 100px;
+
+  }
+  .contenedor3a {
+    height: 420px;
+    width: 600px;
+    
+    border-radius: 20px;
+    border-top-right-radius:0px ;
+    border-bottom-right-radius:0px ;
+    float: left;
+    
+    
+
+  }
+  .frame1 {
+    background-color: #e8f0ff; 
+    height: 420px;
+    width: 600px;
+   
+    border-top-left-radius:20px ;
+    border-bottom-left-radius:20px ;
+
+    
+    
+
+  }
+
+
+  
+  
+  
+  .contenedor3b {
+    height: 420px;
+    width: 300px;
+    background-color:#478ac9;
+    border-radius:  20px;
+    border-top-left-radius:0px ;
+    border-bottom-left-radius:0px ;
+    float: left;
+    
+    
+
+  }

@@ -84,7 +84,8 @@ def registrar():
                             nombre, username, correo, pass_enc])
                 # Ejecuta la sentencia SQL
                 con.commit()
-                return "Guardado con éxito <a href='/'>Home</a>"
+                return  redirect ("/Iniciar-Sesión")
+
 
     return render_template("registro.html", frm=frm)
 
