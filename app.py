@@ -82,7 +82,7 @@ def registrar():
                 # Prepara la sentencia SQL
                 cur.execute("INSERT INTO usuario (nombre, username, correo, password) VALUES (?,?,?,?)", [
                             nombre, username, correo, pass_enc])
-                # Ejecuta la sentencia SQL
+                # Ejecuta la sentencia SQL #
                 con.commit()
                 return  redirect ("/Iniciar-Sesión")
 
