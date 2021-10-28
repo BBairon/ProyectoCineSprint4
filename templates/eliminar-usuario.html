@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block title %} Eliminar de Usuario {% endblock %} {% block content %}
+
+
+<div class="centrado1">
+<h5>
+    Digite el Username del usuario a eliminar
+</h5>
+<form action="" method="post">
+    {{ frm.hidden_tag() }}
+    <p>
+        {{ frm.username.label }} {{ frm.username }} {% for error in frm.username.errors %}
+        <div>
+            {{ error }}
+        </div>
+        {% endfor %}
+    </p>
+    {{ frm.eliminar }}
+</form>
+</div>
+
+<br> {% endblock %}

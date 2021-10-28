@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %} {% endblock %} </title>
+</head>
+
+<body>
+    <header class="enca">
+        <div>
+            <a href="#">
+                <img class="bo" src="static/images/LOGOBLANCO.png" alt="Logo BLANCO">
+            </a>
+        </div>
+
+
+
+    </header>
+
+    {% block content %} {% endblock %}
+    <!--::::Pie de Pagina::::::-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="static/images/LOGOBLANCO.PNG" alt="Logo BLANCO">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h4>SOBRE NOSOTROS</h4>
+
+
+            </div>
+            <div class="box">
+                <h4>SIGUENOS</h4>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2021 <b>GRUPO6</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<link rel="stylesheet" href="{{ url_for('static',filename='css/estilos.css')}}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/nicepage.css')}}">
+<script src="{{ url_for('static',filename='js/core.js')}}"></script>
